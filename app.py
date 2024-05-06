@@ -22,7 +22,7 @@ from frontend.Estructuras.DatosCTR.CanalTR import areadatosTR
 
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 app.layout = dbc.Container([
     dbc.Row([
         dbc.Col(variableA, md=12, style={'textAlign': 'center'}),
